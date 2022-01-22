@@ -324,3 +324,13 @@ function capital_cases(sentences){
   } )
 }
 capital_cases(sentences);
+
+/*Solution*/
+const sentences = 'Prva recenica. Ovo je druga recenica. Na kraju treca.'
+const capital_cases = (sentences) => {
+  //split into array
+  const test = sentences.split('. ');
+  //map through array, get first letter, join
+  const res = test.map(element => element[0]).join('')
+  }
+capital_cases(sentences);
